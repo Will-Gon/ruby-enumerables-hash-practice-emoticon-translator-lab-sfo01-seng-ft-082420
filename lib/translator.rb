@@ -27,7 +27,7 @@ def get_english_meaning(path, meaning)
   library = load_library(path)
   meaning = library.keys.find do |key|
     library[key][:japanese] == meaning
-    binding.pry
+    #binding.pry
 end
     meaning ? meaning :"Sorry, that emoticon was not found"
 end
